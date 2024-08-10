@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
-  background: url("./drum-kit-assets/background.jpg") bottom center;
+  /* background: url("./drum-kit-assets/background.jpg") bottom center; */
+  background: linear-gradient(130deg, hsla(25, 100%, 55%, 0.562), #af002d 41.07%, #ee8f6f 76.05%);
   background-size: cover no-repeat;
 }
 
@@ -36,8 +37,8 @@ html {
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: hsla(119, 88%, 56%, 0.891);
+  box-shadow: 0 0 1rem hsla(119, 88%, 56%, 0.891);
 }
 
 .kbd {
@@ -49,6 +50,6 @@ html {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #ffc600;
+  color: hsla(119, 88%, 56%, 0.891);
   display: block;
 }
