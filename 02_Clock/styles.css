@@ -1,5 +1,11 @@
-.body {
-  margin: 0px auto;
+
+
+.clock-tittle{
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(140deg, #40b8ff 20%, #00ff97 43%, #ff007c);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .clock {
     background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
@@ -8,6 +14,7 @@
   position: relative;
   border-radius: 50%;
   border: 2px solid grey;
+  margin: 0px auto;
 }
 
 .hand {
