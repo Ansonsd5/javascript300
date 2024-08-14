@@ -1,5 +1,6 @@
 
 
+
     const inventors = [
       { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
       { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
@@ -51,6 +52,12 @@
     console.log(getAge);
 
     // 5. Sort the inventors by years lived
+
+   console.log("sorted on age",inventors.sort((a,b) => {
+    let age1 = a.passed - a.year;
+    let age2 = b.passed - b.year;
+    return age1 -age2
+   }))
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris

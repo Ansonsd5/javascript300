@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+
+body {
+  margin: 0;
+}
+.container-panel {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.panel {
+  background: #6b0f9c;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  font-size: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+}
+
+.panel p {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 1em;
+  }
+
+.panel1 {
+  background-image: url(https://img.freepik.com/premium-photo/raindrops-flower-rain_1260025-79311.jpg?w=740);
+}
+.panel2 {
+  background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/pile-of-fresh-strawberries-at-farmers-markets-free-photo.jpg?w=600&quality=80);
+}
+.panel3 {
+  background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/illuminated-neon-circle-behind-the-mountain-free-photo.jpeg?w=600&quality=80);
+}
+.panel4 {
+  background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/amazing-nature-mountain-scenery-during-sunset-free-photo.jpg?w=2210&quality=70);
+}
+.panel5 {
+  background-image: url(https://img.freepik.com/free-photo/close-up-beautiful-flower_23-2151589774.jpg?t=st=1723653965~exp=1723657565~hmac=600218fb208f7159bb4e02eb4c4abe5cb18a048a740080ef825bf89b5b1907f1&w=360);
+}
+
+.panel > *:first-child {
+  transform: translateY(-200%);
+}
+.panel.open-active > *:first-child {
+    transform: translateY(0);
+  }
+
+
+
+.panel > *:last-child {
+  transform: translateY(200%);
+}
+
+.panel.open-active > *:last-child {
+    transform: translateY(0);
+  }
+
+  .panel.open {
+    flex: 5;
+    font-size: 40px;
+  }
+
+  .panel p:nth-child(2) {
+    font-size: 1.5em;
+  }
+
+
