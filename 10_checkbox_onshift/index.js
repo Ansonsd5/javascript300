@@ -6,8 +6,8 @@ function handleCheck(e) {
    
     let inBetween = false;
     if (e.shiftKey && this.checked) {
-      checkboxes.forEach(checkbox => {
-        
+      checkboxes.forEach((checkbox,key) => {
+        checkbox.setAttribute("data-checkbox",`data-checkbox-${key+1}`)
         if (checkbox === this || checkbox === lastChecked) {
           inBetween = !inBetween;
           
